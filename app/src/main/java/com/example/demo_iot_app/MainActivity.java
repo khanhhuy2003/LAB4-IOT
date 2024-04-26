@@ -141,16 +141,11 @@ public class MainActivity extends AppCompatActivity {
         mqttHelper = new MQTTHelper(this);
         mqttHelper.setCallback(new MqttCallbackExtended() {
             @Override
-
-
             public void connectComplete(boolean reconnect, String serverURI) {
                 Log.d("TEST", "Subcribed");
             }
-
             @Override
             public void connectionLost(Throwable cause) {
-
-
             }
 
             @Override
@@ -179,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-
             @Override
             public void deliveryComplete(IMqttDeliveryToken token) {
 

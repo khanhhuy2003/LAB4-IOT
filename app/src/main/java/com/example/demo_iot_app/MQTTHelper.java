@@ -34,9 +34,7 @@ public class MQTTHelper {
 
             @Override
             public void connectionLost(Throwable throwable) {
-
             }
-
             @Override
             public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
                 Log.w("Mqtt", mqttMessage.toString());
